@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
+:root {
+    --primary-color: #a438ff;
+    --secondary-color: #0175a7;
+    --tertiary-color: rgb(255, 157, 0);
+}
+* {
+    font-family: "Lexend", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.landing-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    width: auto;
+    padding: 0 10em;
+}
+
+.left > h1 {
+    color: white;
+    margin: 0.15em 0;
+    font-size: 2.5em;
+}
+
+.left > h3 {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.676);
+}
+
+.button {
+    margin-top: 1.5em;
+}
+
+.button a {
+    width: 2.5em;
+    height: 2.5em;
+    padding: 0.75em 1.5em;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: bolder;
+    border-radius: 0.25em;
+}
+
+.button a:first-of-type {
+    margin-right: 1.5em;
+    background-color: white;
+    border: 0.25em solid white;
+}
+
+.button a:last-of-type {
+    box-sizing: border-box;
+    border: 0.25em solid white;
+    color: white;
+}
+
+#explore {
+    background-color: var(--tertiary-color);
+    color: white;
+    text-decoration: none;
+    padding: 1em 3em;
+    border-radius: 0.5em;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.our-service {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
+    margin-bottom: 2.5em;
+}
+
+.our-service .card-section {
+    width: 80%;
+    margin: 2.5em auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+}
+
+.our-service .card {
+    width: 15em;
+    height: 10em;
+    position: relative;
+    border-radius: 0.25em;
+    overflow: hidden;
+    justify-self: center;
+}
+
+.our-service .card img {
+    width: 100%;
+    height: 100%;
+}
+
+.our-service .card p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: bolder;
+    text-shadow: 1px 1px black;
+    z-index: 2;
+}
+
+.our-service .card span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+    text-align: center;
+}
+
+.news-section {
+    width: 80%;
+    padding: 1.5em 3em;
+    display: grid;
+    grid-template-columns: 60% 5% 30%;
+    grid-template-rows: repeat(2, minmax(10em, 15em));
+}
+
+.news-card-section {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    padding: 1.5em 3em;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+.news-card {
+    width: 25em;
+    height: 20em;
+    box-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.279);
+}
+.news-card:first-of-type {
+    margin-right: 1.85em;
+}
+
+.news-card p {
+    margin: 0.15em 0 0.25em 0.35em;
+}
+
+.news-card img {
+    width: 100%;
+    height: 45%;
+}
+
+.fixture-card-section {
+    width: 100%;
+    height: 80%;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: center;
+    align-self: center;
+}
+
+.fixture-card {
+    width: 100%;
+    box-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.279);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5em;
+    border-radius: .5em;
+}
+
+.fixture-card p {
+   margin: 0;
+}
+
+.fixture-card p:first-of-type{
+    font-size: 1.25em;
+    font-weight: bolder;
+    margin-bottom: .15em;
+}
+
+.fixture-card p:nth-of-type(2){
+    font-size: 1em;
+    color: grey;
+    font-weight: bold;
+    margin-bottom: .15em;
+}
