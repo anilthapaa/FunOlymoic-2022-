@@ -1,4 +1,4 @@
-# FunOlymoic-2022-
+# FunOlympic-2022-
 System Features:
 
 User:
